@@ -1,0 +1,10 @@
+#!/bin/bash
+
+checkscript=`ps -ef | grep Launch_FTP.sh | grep -v grep | wc -l`
+while [ $checkscript -gt 0 ]
+do
+    echo "Script running..."
+    checkscript=`ps -ef | grep Launch_FTP.sh | grep -v grep | wc -l`
+    sleep 10
+done
+./Launch_FTP.sh "$1"

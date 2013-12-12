@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash test
 #
 # Identify client name by looking at the username the file belongs to. Echo results.
 #

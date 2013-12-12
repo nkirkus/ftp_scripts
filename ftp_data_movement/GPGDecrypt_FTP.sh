@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash change
 
 echo -e "\nGPGDECRYPT\n"
 

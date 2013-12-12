@@ -6,7 +6,7 @@ username="$3"
 
 ftp_hostname="10.5.4.113"
 ftp_user="pmduser"
-ftp_passwd="\$upP0rT"
+ftp_passwd="$PASSWORD" #PASSWORD Needed
 
 ftp -n -v "$ftp_hostname"<< EOF
 user "$ftp_user" "$ftp_passwd"

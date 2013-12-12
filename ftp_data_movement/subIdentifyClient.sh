@@ -227,6 +227,12 @@ elif [ "$username" == marathonaverittftp ]
 elif [ "$username" == elderplanftp ]
     then
         clientname="Elderplan"
+elif [ "$username" == meddecisionsftp ]
+    then
+        clientname="Medecision"
+elif [ "$username" == medecisionftp ]
+    then
+        clientname="Medecision"
 else
         clientname="UnknownUser"
 fi

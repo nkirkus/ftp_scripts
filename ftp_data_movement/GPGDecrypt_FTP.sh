@@ -42,7 +42,7 @@ gpg --no-tty --homedir "/root/.gnupg/" --output "$decryptedpath"/"$outputfile" -
 #       Is the file a zip file? If so - unzip and upload. Else upload normally.
 
 #	if [ `echo "$outputfile" | grep ".zip" | wc -l` == 1 -o `echo "$outputfile" | grep ".ZIP" | wc -l` == 1 ];
-        if [ `echo "$outputfile" | grep -i -e SXCPCTSTD | wc -l` == 1 ];
+        if [ `echo "$outputfile" | grep -i -e SXCPCTSTD -e MPD230420131106_NCPDPCHF51_RX32058C2.zip | wc -l` == 1 ];
         then
                 echo "HS Zip file skipped due to size."
                 ./v3Upload_FTP.sh "$decryptedpath" "$outputfile" "$altusername" > /$ftplog/Upload_FTP_"$outputfile".tmp
@@ -129,7 +129,7 @@ else {
 #	Is the file a zip file? If so - unzip and upload. Else upload normally.
 
 #	if [ `echo "$filename" | grep ".zip" | wc -l` == 1 -o `echo "$filename" | grep ".ZIP" | wc -l` == 1 ];
-        if [ `echo "$outputfile" | grep -i -e SXCPCTSTD | wc -l` == 1 ];
+        if [ `echo "$outputfile" | grep -i -e SXCPCTSTD -e MPD230420131106_NCPDPCHF51_RX32058C2.zip | wc -l` == 1 ];
         then
                 echo "HS Zip file skipped due to size."
 		./v3Upload_FTP.sh "$decryptpath" "$filename" "$altusername" > /$ftplog/Upload_FTP_"$filename".tmp
